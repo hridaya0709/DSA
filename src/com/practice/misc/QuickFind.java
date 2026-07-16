@@ -15,35 +15,34 @@ public class QuickFind {
 
         System.out.println("Elements created.");
 
-        String userInput = "";
+        String userInput;
         do {
-            System.out.println("What operation do you want to perform? \n" +
-                    "A. Create connection \n" +
-                    "B. Find connection \n" +
-                    "C. Print List");
+            System.out.println("""
+                    What operation do you want to perform?\s
+                    A. Create connection\s
+                    B. Find connection\s
+                    C. Print List""");
             userInput = scanner.next().trim();
 
-            if(userInput.equals("A")) {
-                System.out.println("Enter the two elements that you want to join. Enter only from 0 to " + (n-1) +
-                        " separated by a comma");
-                String userSelection = scanner.next();
-                String[] values = userSelection.split(",");
-                boolean result = joinElements(list, Integer.parseInt(values[0]), Integer.parseInt(values[1]));
-                System.out.println(result);
-            }
-            else if(userInput.equals("B")) {
-                System.out.println("Enter the two elements that you want to find if connection is there. Enter only from 0 to "
-                        + (n-1) + " separated by a comma");
-                String userSelection = scanner.next();
-                String[] values = userSelection.split(",");
-                boolean result = findJoin(list, Integer.parseInt(values[0]), Integer.parseInt(values[1]));
-                System.out.println(result);
-            }
-            else if(userInput.equals("C")) {
-                printList(list);
-            }
-            else {
-                System.out.println("Exiting...");
+            switch (userInput) {
+                case "A" -> {
+                    System.out.println("Enter the two elements that you want to join. Enter only from 0 to " + (n - 1) +
+                            " separated by a comma");
+                    String userSelection = scanner.next();
+                    String[] values = userSelection.split(",");
+                    boolean result = joinElements(list, Integer.parseInt(values[0]), Integer.parseInt(values[1]));
+                    System.out.println(result);
+                }
+                case "B" -> {
+                    System.out.println("Enter the two elements that you want to find if connection is there. Enter only from 0 to "
+                            + (n - 1) + " separated by a comma");
+                    String userSelection = scanner.next();
+                    String[] values = userSelection.split(",");
+                    boolean result = findJoin(list, Integer.parseInt(values[0]), Integer.parseInt(values[1]));
+                    System.out.println(result);
+                }
+                case "C" -> printList(list);
+                default -> System.out.println("Exiting...");
             }
         }
         while(userInput.equals("A") || userInput.equals("B") || userInput.equals("C"));

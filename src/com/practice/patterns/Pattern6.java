@@ -1,6 +1,5 @@
 package com.practice.patterns;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Pattern6 {

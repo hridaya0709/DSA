@@ -14,7 +14,7 @@ public class Pattern11 {
         System.out.print("Enter n: ");
         int n = new Scanner(System.in).nextInt();
 
-        int k = 0;
+        int k;
         for(int i = 0; i < n; i++) {
             k = (i % 2 == 0) ? 0 : 1;
             for(int j = 0; j <= i; j++) {
