@@ -39,39 +39,3 @@ public class Pattern22 {
     }
 }
 
-
-//package com.practice.patterns;
-//
-//import java.util.Scanner;
-//
-//public class Pattern22 {
-//
-//    public static void main(String[] args) {
-//        System.out.print("Enter n: ");
-//        int n = new Scanner(System.in).nextInt();
-//
-//        int size = (2 * n) - 1;
-//        int k = n;
-//        for(int i = 0; i < size; i++) {
-//            for(int j = 0; j < size; j++) {
-//                if(i == n-1 && j == n-1) {
-//                    k--;
-//                    System.out.print(k);
-//                    k++;
-//                }
-//                else if(i == j && i != 0 && i < n) {
-//                    k--;
-//                    System.out.print(k);
-//                }
-//                else if(i == 0 || j == 0 || i == size-1 || j == size-1) {
-//                    System.out.print(n);
-//                }
-//                else {
-//                    System.out.print(k);
-//                }
-//            }
-//            System.out.println();
-//        }
-//    }
-//}
-
