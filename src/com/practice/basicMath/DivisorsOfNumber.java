@@ -22,7 +22,7 @@ public class DivisorsOfNumber {
     public static void main(String[] args) {
         System.out.print("Enter n: ");
         int n = new Scanner(System.in).nextInt();
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         for(int i = 1; i <= n; i++) {
             if(n%i == 0) list.add(i);
