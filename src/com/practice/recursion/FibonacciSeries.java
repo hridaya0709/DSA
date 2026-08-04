@@ -1,6 +1,5 @@
 package com.practice.recursion;
 
-import java.lang.classfile.attribute.SourceDebugExtensionAttribute;
 import java.util.Scanner;
 
 public class FibonacciSeries {

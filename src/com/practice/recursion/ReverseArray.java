@@ -24,14 +24,14 @@ public class ReverseArray {
         }
 
         int[] reverseArr = new int[n];
-        reverseArr = reverseArray(arr, reverseArr, 0, n-1, n/2);
+        reverseArr = reverseArray(arr, reverseArr, 0, n-1);
         System.out.println(Arrays.toString(reverseArr));
     }
 
-    public static int[] reverseArray(int[] arr, int[] reverseArr, int start, int end, int mid) {
+    public static int[] reverseArray(int[] arr, int[] reverseArr, int start, int end) {
         if(end < 0) return reverseArr;
 
         reverseArr[end] = arr[start];
-        return reverseArray(arr, reverseArr, ++start, --end, mid);
+        return reverseArray(arr, reverseArr, ++start, --end);
     }
 }

@@ -1,7 +1,5 @@
 package com.practice.recursion;
 
-import java.lang.invoke.StringConcatFactory;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class PalindromeString {
