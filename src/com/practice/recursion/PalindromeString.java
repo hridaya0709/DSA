@@ -18,12 +18,15 @@ public class PalindromeString {
 
     public static void main(String[] args) {
         System.out.print("Enter a string: ");
-        String string = new Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.nextLine();
 
         char[] reverseString = reverse(string.toCharArray(), new char[string.length()], 0, string.length()-1);
         //System.out.println(reverseString);
         if(string.equalsIgnoreCase(new String(reverseString))) System.out.println("Palindrome");
         else System.out.println("Not Palindrome");
+
+        scanner.close();
     }
 
     public static char[] reverse(char[] stringArr, char[] reverseArr, int start, int end) {

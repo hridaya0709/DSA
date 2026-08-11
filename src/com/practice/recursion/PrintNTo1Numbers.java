@@ -15,11 +15,14 @@ public class PrintNTo1Numbers {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         if(n < 0) return;
 
         print(n, n);
+
+        scanner.close();
     }
 
     public static void print(int count, int n) {

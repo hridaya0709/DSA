@@ -12,7 +12,8 @@ public class Pattern14 {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         for(int i = 0; i < n; i++) {
             char ch = 'A';
@@ -22,5 +23,7 @@ public class Pattern14 {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 }

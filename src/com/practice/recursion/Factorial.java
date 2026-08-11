@@ -26,7 +26,8 @@ public class Factorial {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         if(n < 0) {
             System.out.println(0);
@@ -35,6 +36,8 @@ public class Factorial {
 
         int result = factorial(n);
         System.out.println(result);
+
+        scanner.close();
     }
 
     public static int factorial(int n) {

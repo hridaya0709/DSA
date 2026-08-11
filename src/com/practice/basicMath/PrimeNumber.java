@@ -7,7 +7,8 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         if(n == 1 || n % 2 == 0) {
             System.out.println("Not Prime number");
@@ -22,5 +23,7 @@ public class PrimeNumber {
         }
 
         System.out.println("Prime number");
+
+        scanner.close();
     }
 }

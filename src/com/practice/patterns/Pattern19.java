@@ -16,7 +16,8 @@ public class Pattern19 {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         int space = 0;
         for(int i = n; i > 0; i--) {
@@ -53,5 +54,7 @@ public class Pattern19 {
 
             System.out.println();
         }
+
+        scanner.close();
     }
 }

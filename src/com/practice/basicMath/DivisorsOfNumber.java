@@ -21,7 +21,8 @@ public class DivisorsOfNumber {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         ArrayList<Integer> list = new ArrayList<>();
 
         for(int i = 1; i <= n; i++) {
@@ -29,5 +30,6 @@ public class DivisorsOfNumber {
         }
 
         System.out.println(list);
+        scanner.close();
     }
 }

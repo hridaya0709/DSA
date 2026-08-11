@@ -16,7 +16,8 @@ public class ReverseArray {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         System.out.println("Enter " + n + " elements: ");
         int[] arr = new int[n];
         for(int i = 0; i < n; i++) {
@@ -26,6 +27,8 @@ public class ReverseArray {
         int[] reverseArr = new int[n];
         reverseArr = reverseArray(arr, reverseArr, 0, n-1);
         System.out.println(Arrays.toString(reverseArr));
+
+        scanner.close();
     }
 
     public static int[] reverseArray(int[] arr, int[] reverseArr, int start, int end) {

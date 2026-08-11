@@ -24,7 +24,8 @@ public class CountDigitsOfNumber {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        long n = new Scanner(System.in).nextLong();
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
 
         int counter = 0;
         if(n == 0) {
@@ -36,5 +37,7 @@ public class CountDigitsOfNumber {
             counter++;
         }
         System.out.println(counter);
+
+        scanner.close();
     }
 }

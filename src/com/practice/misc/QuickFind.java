@@ -47,7 +47,7 @@ public class QuickFind {
         }
         while(userInput.equals("A") || userInput.equals("B") || userInput.equals("C"));
 
-
+        scanner.close();
     }
 
     public static boolean joinElements(int[] list, int a, int b){

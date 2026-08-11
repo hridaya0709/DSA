@@ -15,7 +15,8 @@ public class Pattern22 {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         int size = (2 * n) - 1;
         for(int i = 0; i < size; i++) {
@@ -28,6 +29,8 @@ public class Pattern22 {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 
     public static int findMin(int top, int bottom, int left, int right) {

@@ -12,7 +12,8 @@ public class Pattern11 {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         int k;
         for(int i = 0; i < n; i++) {
@@ -23,5 +24,7 @@ public class Pattern11 {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 }

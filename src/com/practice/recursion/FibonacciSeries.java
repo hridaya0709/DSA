@@ -17,11 +17,14 @@ public class FibonacciSeries {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         if(n == 0) return;
 
         printFibonacci(0,0, 1, n);
+
+        scanner.close();
     }
 
     private static void printFibonacci(int count, int n1, int n2, int n) {

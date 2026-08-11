@@ -15,12 +15,15 @@ public class Print1ToNNumbers {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         if(n < 0) return;
 
         int count = 1;
         print(count, n);
+
+        scanner.close();
     }
 
     public static void print(int count, int n) {

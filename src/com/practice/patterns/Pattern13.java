@@ -12,7 +12,8 @@ public class Pattern13 {
 
     public static void main(String[] args) {
         System.out.print("Enter n: ");
-        int n = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         int k = 1;
 
@@ -23,5 +24,7 @@ public class Pattern13 {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 }

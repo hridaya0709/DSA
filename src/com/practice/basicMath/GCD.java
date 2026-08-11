@@ -26,9 +26,10 @@ public class GCD {
 
     public static void main(String[] args) {
         System.out.print("Enter n1: ");
-        int x = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
         System.out.print("Enter n2: ");
-        int y = new Scanner(System.in).nextInt();
+        int y = scanner.nextInt();
 
         int n1 = x;
         int n2 = y;
@@ -47,5 +48,7 @@ public class GCD {
         }
 
         System.out.println("GCD of " + x + " and " + y + ": " + gcd);
+
+        scanner.close();
     }
 }
